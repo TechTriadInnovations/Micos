@@ -12,12 +12,12 @@ PODS:
   - devicelocale (0.0.1):
     - Flutter
   - facebook_app_events (0.0.1):
-    - FBAudienceNetwork (~> 6.15)
+    - FBAudienceNetwork (~> 6.15.2)
     - FBSDKCoreKit (~> 17.0)
     - Flutter
   - FBAEMKit (17.4.0):
     - FBSDKCoreKit_Basics (= 17.4.0)
-  - FBAudienceNetwork (6.16.0)
+  - FBAudienceNetwork (6.15.2)
   - FBSDKCoreKit (17.4.0):
     - FBAEMKit (= 17.4.0)
     - FBSDKCoreKit_Basics (= 17.4.0)
