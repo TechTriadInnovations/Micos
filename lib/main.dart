@@ -9,7 +9,14 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final vchgxuyguyewgjhsdvhjdasf = VqweghvhjvjGvhgavsufvhg();
   await vchgxuyguyewgjhsdvhjdasf.initializePersistedState();
+  const MethodChannel qwpoidjxkjvier = MethodChannel('yuerbhqbwjhkbvh'); //名字必须与AppDelegate.swift取的名字一致
+  qwpoidjxkjvier.setMethodCallHandler((MethodCall call) async {
+    if (call.method == 'erytuhbhweqeijhfb') {
+      //存返回的pushtoken
 
+      VqweghvhjvjGvhgavsufvhg().stygianpushtoken = call.arguments;
+    }
+  });
   runApp(ChangeNotifierProvider(
     create: (context) => vchgxuyguyewgjhsdvhjdasf,
     child: const Huygywqzxbjnvbbqv(),

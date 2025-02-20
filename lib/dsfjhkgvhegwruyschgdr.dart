@@ -1,4 +1,7 @@
 import 'package:go_router/go_router.dart';
+import 'package:micos/bpage/wetjfgbhjrtbglh.dart';
+import 'package:micos/bpage/loginweqhufhegrhtbg.dart';
+import 'package:micos/bpage/startweruughfjrtjhgsa.dart';
 import 'package:micos/wergthibjkhxcbhjsdfghgf/ewruitgxzbcjhwefds/hweuirghubxcvjkb.dart';
 import 'package:micos/wergthibjkhxcbhjsdfghgf/ewruitgxzbcjhwefds/huirethkjxcvbkjxdf.dart';
 import 'package:micos/wergthibjkhxcbhjsdfghgf/ewruitgxzbcjhwefds/guangchangindex.dart';
@@ -34,7 +37,7 @@ class Hghuagyuefytwqefrtydsvgsadew {
       GoRoute(
         path: '/',
         name: 'xghhuagshegr',
-        builder: (context, state) => const Ibshuagdfyusfegfcghsa(),
+        builder: (context, state) => const Startxvcghvqweyhjgbn(),
       ),
       // 初始页
       GoRoute(
@@ -205,6 +208,26 @@ class Hghuagyuefytwqefrtydsvgsadew {
         name: 'Mwgytuwqfghvcxbnv',
         builder: (context, state) => const Mwgytuwqfghvcxbnv(),
       ),
+      // B初始页
+      GoRoute(
+        path: '/Startxvcghvqweyhjgbn',
+        name: 'Startxvcghvqweyhjgbn',
+        builder: (context, state) => const Startxvcghvqweyhjgbn(),
+      ),
+      // B快速登录
+      GoRoute(
+        path: '/QueckLoginwgefvcbghvy',
+        name: 'QueckLoginwgefvcbghvy',
+        builder: (context, state) => const QueckLoginwgefvcbghvy(),
+      ),
+      // B包
+      GoRoute(
+        path: '/Pagecxhjghwqegthgfbhv',
+        name: 'Pagecxhjghwqegthgfbhv',
+        builder: (context, state) => Pagecxhjghwqegthgfbhv(
+          uxhjgqwegvbhuyewfrtgf: state.uri.queryParameters['uxhjgqwegvbhuyewfrtgf']!,
+        ),
+      )
     ],
   );
 }

@@ -1,0 +1,55 @@
+[
+    {
+        "customPath": "/micos/qweytrfbvhhwe/vbyuguhevrhdsujq",
+        "systemPath": "/api/index/v2/getDf",
+        "reqReplace": {
+            "ergbvdqaebDid": "deviceId",
+            "iouhhergvbbDType": "deviceType",
+            "ytuihberwtdfbVpn": "useVpn",
+            "qwerfvryijyukOTyoe": "osType",
+            "qwerfdvgfhSim": "useSimCard",
+            "ewvcxgrtVers": "version",
+            "qwergdfjhtChan": "channel",
+            "werthbtkNetwrok": "networkOperator",
+            "vcbtuikwqeLang": "language",
+            "qwetgfi7Other": "otherAppNames",
+            "dfghgytikTime": "timezone",
+            "qwertghfhytiKey": "keyboards"
+        }
+    },
+    {
+        "customPath": "/micos/dyrtujhnq/qwrefgdntyu",
+        "systemPath": "/api/login/v3/quickLogin",
+        "reqReplace": {
+            "xcgrtjuAVers": "appVersion",
+            "zwergvferSim": "useSimCard",
+            "tryujyhneawrDtype": "deviceType",
+            "qwefdhytiknIcon": "icon",
+            "xcveryhtykjhOtype": "osType",
+            "qwerfdcvdthOvers": "osVersion",
+            "tyujnhersdAid": "appId",
+            "qwefgdhytikmChan": "channel",
+            "tyijnewrgdfDid": "deviceId",
+            "qwertfgvdsedPtoken": "pushToken",
+            "opuiytyjhgfsdNetwork": "networkOperator",
+            "qwefsdvxzgLang": "language"
+        }
+    },
+    {
+        "customPath": "/micos/uwiyrehhg/dfgyurguyqisa",
+        "systemPath": "/api/device/save",
+        "reqReplace": {
+            "qwetgfdytAid": "appId",
+            "uydfgbgfgAver": "appVersion",
+            "saerfsdgdhChan": "channel",
+            "ertgbfdsdftgDno": "deviceNo",
+            "vbntryhwerDtype": "deviceType",
+            "xcveryhnfgdOtype": "osType",
+            "wertgbsdrOvers": "osVersion",
+            "ewrytghfdefhSim": "useSimCard",
+            "nhgngfnwePtoken": "pushToken",
+            "qwefvrthytNetwork": "networkOperator",
+            "rhkiolzxcvLang": "language"
+        }
+    }
+]

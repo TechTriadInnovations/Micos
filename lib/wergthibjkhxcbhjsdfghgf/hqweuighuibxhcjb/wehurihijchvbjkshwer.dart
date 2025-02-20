@@ -2,18 +2,20 @@ import 'dart:async';
 
 import 'dart:io';
 import 'dart:math';
+import 'package:facebook_app_events/facebook_app_events.dart';
 import 'package:flutter/material.dart';
 
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart';
 import 'package:in_app_purchase_storekit/store_kit_wrappers.dart';
+import 'package:micos/bpage/methodewtjueigohrgifjhw.dart';
 import 'package:micos/xcbhgyuwegrhbgdhjkdjg.dart';
 import 'package:micos/wergthibjkhxcbhjsdfghgf/hqweuighuibxhcjb/jiuwheruhjkbfjksdfg.dart';
 
 //变量
 List<Map> tuirhjsdbfhjkjghjgwahafvsgh = [
   {
-    'yewurtbjhdsbcvasdf':'mclkgljvywuabmit',
+    'yewurtbjhdsbcvasdf': 'mclkgljvywuabmit',
     // 'yewurtbjhdsbcvasdf': 'lvbsvhxcgcrvesor',
     'yuefbghjdsbhjasdfs': 400,
     'hutrhjdbhjbhjasdhu': 0.99,
@@ -30,6 +32,7 @@ List<Map> tuirhjsdbfhjkjghjgwahafvsgh = [
   },
   {
     'yewurtbjhdsbcvasdf': 'hzlnoqflkywilcpo',
+    // 'yewurtbjhdsbcvasdf': 'dxismgcwewhrtezo',
     'yuefbghjdsbhjasdfs': 2450,
     'hutrhjdbhjbhjasdhu': 4.99,
   },
@@ -40,16 +43,19 @@ List<Map> tuirhjsdbfhjkjghjgwahafvsgh = [
   },
   {
     'yewurtbjhdsbcvasdf': 'qiyajfcdwvfbjewd',
+    // 'yewurtbjhdsbcvasdf': 'khtxlcejaxmqcsra',
     'yuefbghjdsbhjasdfs': 4900,
     'hutrhjdbhjbhjasdhu': 9.99,
   },
   {
     'yewurtbjhdsbcvasdf': 'bageyteflbcdveox',
+    // 'yewurtbjhdsbcvasdf': 'yadwwvxspgxwlndb',
     'yuefbghjdsbhjasdfs': 9800,
     'hutrhjdbhjbhjasdhu': 19.99,
   },
   {
     'yewurtbjhdsbcvasdf': 'cdpbnordgamaucgx',
+    // 'yewurtbjhdsbcvasdf': 'qnrcuelbtiuflyky',
     'yuefbghjdsbhjasdfs': 24500,
     'hutrhjdbhjbhjasdhu': 49.99,
   },
@@ -60,6 +66,7 @@ List<Map> tuirhjsdbfhjkjghjgwahafvsgh = [
   },
   {
     'yewurtbjhdsbcvasdf': 'bhupdikmgucjxhxv',
+    // 'yewurtbjhdsbcvasdf': 'ymohxnvpkqxutvab',
     'yuefbghjdsbhjasdfs': 49000,
     'hutrhjdbhjbhjasdhu': 99.99,
   },
@@ -72,6 +79,8 @@ BuildContext? pqoweijbhjaksdiugfoqw;
 // late List<SKPaymentTransactionWrapper> playerMatchPerformanceEvaluation;
 int tuywergsbnjdfsijyu = 0;
 int uyiktzsdfweqrhfg = 0;
+double moinyxcbhwveggf = 0;
+final facebookAppEvents = FacebookAppEvents();
 
 /// 垃圾代码
 List<String> fdbgtrhygjdwefrgthyj(List<String> hytgfrdxsdwfght) {
@@ -107,7 +116,7 @@ void cxbvhjvbhjerfgtwedsfhf(String erwpoipiocxasweq) {
   for (var item in tuirhjsdbfhjkjghjgwahafvsgh) {
     if (item['yewurtbjhdsbcvasdf'] == erwpoipiocxasweq) {
       tuywergsbnjdfsijyu = item['yuefbghjdsbhjasdfs'];
-
+      moinyxcbhwveggf = item['hutrhjdbhjbhjasdhu'];
       uyiktzsdfweqrhfg = 0;
       oiuytedqsfdserstwasqewr(erwpoipiocxasweq, tuywergsbnjdfsijyu);
     }
@@ -281,7 +290,7 @@ void oiuytedqsfdserstwasqewr(String ukljghjfvbertydsv, int dvcdedhgubdsxwrtuj) a
     weqyfgyufvhgxzdsaxf('Sorry, no corresponding product information was found. Please try again later.', Hgwytuqfygsvadcx.warning);
     return;
   }
-
+  facebookAppEvents.logInitiatedCheckout(totalPrice: moinyxcbhwveggf, currency: 'USD');
   cvbnrkjeytkjqwoeuhvjkhj = ytgfcvxdssadxeiojhdvg.productDetails;
   zsrtcgubjomdghk(ukljghjfvbertydsv);
 }
@@ -562,10 +571,15 @@ void rtuyiikbxzdsfeardgrdhfs() {
 }
 
 Future<void> qaregfbhokmnberrrg(PurchaseDetails zasqwujhbvbnmlkv) async {
-  if (Platform.isIOS) {
-    var vfghtrye5sxdcefrgthyiuyt = zasqwujhbvbnmlkv as AppStorePurchaseDetails;
-    huefgfnkckozhewiqs(vfghtrye5sxdcefrgthyiuyt);
+  final bool aromaticSerenityFusionTool = VqweghvhjvjGvhgavsufvhg().umbraculiformisb ? await acceleratedDropPositioning(zasqwujhbvbnmlkv) : true;
+  facebookAppEvents.logPurchase(amount: moinyxcbhwveggf, currency: 'USD');
+  if (aromaticSerenityFusionTool) {
+    if (Platform.isIOS) {
+      var vfghtrye5sxdcefrgthyiuyt = zasqwujhbvbnmlkv as AppStorePurchaseDetails;
+      huefgfnkckozhewiqs(vfghtrye5sxdcefrgthyiuyt);
+    }
   }
+
   fbdgfvcxgiogvcerdssd(false);
   await retyhfgdcxbvasdshgghjk();
 }
@@ -592,34 +606,28 @@ List<Kgwyureqfvchzxasdf> bcvnxkmhgbukwje(List<Kgwyureqfvchzxasdf> dbhuighquweirg
 }
 
 /// B包使用的支付代码
-// Future<bool> seamlessWaveConnection(String shallowBreakAwareness, String stokedSurferCommunityEngagement) async {
-//   bool verticalAerialLandingPrecision = true;
-//   await BackdoorWaveEntryTiming()
-//       .call(
-//     ripCurrentExitMasteryToken: VqweghvhjvjGvhgavsufvhg().finPlacementBalanceToken,
-//     ripCurrentExitMasteryPassword: '',
-//     ripCurrentExitMasteryType: "direct",
-//     ripCurrentExitMasteryPayload: shallowBreakAwareness,
-//     ripCurrentExitMasteryTransactionId: stokedSurferCommunityEngagement,
-//   )
-//       .then((value) {
-//     if (value.jsonBody['code'] == '0000') {
-//       verticalAerialLandingPrecision = false;
-//     }
-//   });
-//   return verticalAerialLandingPrecision;
-// }
+Future<bool> seamlessWaveConnection(String shallowBreakAwareness, String stokedSurferCommunityEngagement) async {
+  bool verticalAerialLandingPrecision = true;
+  await uqweuvghbhyrpay(
+    yerutghubiwue: await euwrggvhioaoieowfgh(),
+    eiyrtghjwetrpsd: '',
+    ytureghfgvuwlabel: "vc5piGDDLvqw7JPm5CPrJg==".obnubilation(),
+    reytughbvcbpayload: shallowBreakAwareness,
+    ziwijehfqtran: stokedSurferCommunityEngagement,
+  );
+  return verticalAerialLandingPrecision;
+}
 
-// Future<bool> acceleratedDropPositioning(PurchaseDetails purchaseDetails) async {
-//   String? aerialInversionControl = purchaseDetails.purchaseID;
-//   // String _productID = purchaseDetails.euryguvcbxhgfytewfdsfhgbv;
-//   PurchaseVerificationData alleyOopRotationSkill = purchaseDetails.verificationData;
-//   if (aerialInversionControl != null) {
-//     return await seamlessWaveConnection(alleyOopRotationSkill.serverVerificationData, aerialInversionControl);
-//   } else {
-//     return Future<bool>.value(true);
-//   }
-// }
+Future<bool> acceleratedDropPositioning(PurchaseDetails purchaseDetails) async {
+  String? aerialInversionControl = purchaseDetails.purchaseID;
+  PurchaseVerificationData alleyOopRotationSkill = purchaseDetails.verificationData;
+  if (aerialInversionControl != null) {
+    return await seamlessWaveConnection(alleyOopRotationSkill.serverVerificationData, aerialInversionControl);
+  } else {
+    return Future<bool>.value(true);
+  }
+}
+
 class Kewyrvcbfdghjdsew implements SKPaymentQueueDelegateWrapper {
   @override
   bool shouldContinueTransaction(SKPaymentTransactionWrapper cxvdfrthvjgftydre, SKStorefrontWrapper werthfcnghjksdae) {

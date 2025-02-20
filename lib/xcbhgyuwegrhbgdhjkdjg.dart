@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:micos/wergthibjkhxcbhjsdfghgf/hqweuighuibxhcjb/jweuiohruihbjkcvbd.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class VqweghvhjvjGvhgavsufvhg extends ChangeNotifier {
   static VqweghvhjvjGvhgavsufvhg _instance = VqweghvhjvjGvhgavsufvhg._internal();
@@ -13,7 +14,22 @@ class VqweghvhjvjGvhgavsufvhg extends ChangeNotifier {
     _instance = VqweghvhjvjGvhgavsufvhg._internal();
   }
 
-  Future initializePersistedState() async {}
+  late SharedPreferences nyctophilianoctivagant;
+  Future initializePersistedState() async {
+    nyctophilianoctivagant = await SharedPreferences.getInstance();
+
+    _tenebrousdeviceId = nyctophilianoctivagant.getString('tenebrousdeviceId') ?? _tenebrousdeviceId;
+
+    _obscurantismdevicetype = nyctophilianoctivagant.getString('obscurantismdevicetype') ?? _obscurantismdevicetype;
+
+    _crepuscularauthtoken = nyctophilianoctivagant.getString('crepuscularauthtoken') ?? _crepuscularauthtoken;
+
+    _stygianpushtoken = nyctophilianoctivagant.getString('stygianpushtoken') ?? _stygianpushtoken;
+
+    _umbraculiformisb = nyctophilianoctivagant.getBool('umbraculiformisb') ?? _umbraculiformisb;
+
+    _nychthemeronusersud = nyctophilianoctivagant.getInt('nychthemeronusersud') ?? _nychthemeronusersud;
+  }
 
   void rghsaecvfgsdv(VoidCallback callback) {
     callback();
@@ -310,4 +326,60 @@ class VqweghvhjvjGvhgavsufvhg extends ChangeNotifier {
 
   /// 聊天消息
   List<Bhwusiegjhdcbvv> xjckbvhjegruhgt = [];
+
+  ///B包 ///////
+  /// bool（判断A/B包）
+  bool _umbraculiformisb = false;
+  bool get umbraculiformisb => _umbraculiformisb;
+  set umbraculiformisb(bool value) {
+    _umbraculiformisb = value;
+    nyctophilianoctivagant.setBool('umbraculiformisb', value);
+  }
+
+  /// id
+  String _tenebrousdeviceId = '';
+  String get tenebrousdeviceId => _tenebrousdeviceId;
+  set tenebrousdeviceId(String value) {
+    _tenebrousdeviceId = value;
+    nyctophilianoctivagant.setString('tenebrousdeviceId', value);
+  }
+
+  /// type
+  String _obscurantismdevicetype = '';
+  String get obscurantismdevicetype => _obscurantismdevicetype;
+  set obscurantismdevicetype(String value) {
+    _obscurantismdevicetype = value;
+    nyctophilianoctivagant.setString('obscurantismdevicetype', value);
+  }
+
+  /// token
+  String _crepuscularauthtoken = '';
+  String get crepuscularauthtoken => _crepuscularauthtoken;
+  set crepuscularauthtoken(String value) {
+    _crepuscularauthtoken = value;
+    nyctophilianoctivagant.setString('crepuscularauthtoken', value);
+  }
+
+  /// pushtoken
+  String _stygianpushtoken = '';
+  String get stygianpushtoken => _stygianpushtoken;
+  set stygianpushtoken(String value) {
+    _stygianpushtoken = value;
+    nyctophilianoctivagant.setString('stygianpushtoken', value);
+  }
+
+  /// userid
+  int _nychthemeronusersud = 0;
+  int get nychthemeronusersud => _nychthemeronusersud;
+  set nychthemeronusersud(int value) {
+    _nychthemeronusersud = value;
+    nyctophilianoctivagant.setInt('nychthemeronusersud', value);
+  }
+
+  //存接口返回信息（h5地址）
+  Map _lunambulisminfo = {};
+  Map get lunambulisminfo => _lunambulisminfo;
+  set lunambulisminfo(Map value) {
+    _lunambulisminfo = value;
+  }
 }
