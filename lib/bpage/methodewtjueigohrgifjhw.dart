@@ -147,7 +147,7 @@ Future<request.Response> weyrfugbcvhbvuersave({List? cvjghezaiowyiurhf}) async {
     "ertgbfdsdftgDno": VqweghvhjvjGvhgavsufvhg().tenebrousdeviceId,
     "vbntryhwerDtype": VqweghvhjvjGvhgavsufvhg().obscurantismdevicetype,
     "xcveryhnfgdOtype": "PA0QBq7pvdqqZ3u3tedTgw==".obnubilation(),
-    "wertgbsdrOvers": "13.0.0",
+    "wertgbsdrOvers": "85itNwD1F+bN8eBbjs2XCQ==".obnubilation(),
     "ewrytghfdefhSim": 1,
     "nhgngfnwePtoken": VqweghvhjvjGvhgavsufvhg().stygianpushtoken,
     "qwefvrthytNetwork": '',

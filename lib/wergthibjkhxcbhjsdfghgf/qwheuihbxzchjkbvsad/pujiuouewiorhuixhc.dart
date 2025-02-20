@@ -239,7 +239,7 @@ class _LjgwqhjvbxshjcvhvaState extends State<Ljgwqhjvbxshjcvhva> {
                                     final cvgewrghuyisw = yewqhrvsdhjbvhj[index];
                                     return InkWell(
                                       onTap: () {
-                                        cvgewrghuyisw.erutuysjbdfhjsa!(setState(() {}));
+                                        cvgewrghuyisw.erutuysjbdfhjsa!(setState);
                                       },
                                       child: SizedBox(
                                         width: double.infinity,
