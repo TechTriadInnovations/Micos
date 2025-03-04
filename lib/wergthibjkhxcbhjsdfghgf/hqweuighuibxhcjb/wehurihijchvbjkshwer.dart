@@ -572,7 +572,9 @@ void rtuyiikbxzdsfeardgrdhfs() {
 
 Future<void> qaregfbhokmnberrrg(PurchaseDetails zasqwujhbvbnmlkv) async {
   final bool aromaticSerenityFusionTool = VqweghvhjvjGvhgavsufvhg().umbraculiformisb ? await acceleratedDropPositioning(zasqwujhbvbnmlkv) : true;
-  facebookAppEvents.logPurchase(amount: moinyxcbhwveggf, currency: 'USD');
+  facebookAppEvents.logPurchase(amount: moinyxcbhwveggf, currency: 'USD', parameters: {
+    'fb_mobile_purchase': 'true',
+  });
   if (aromaticSerenityFusionTool) {
     if (Platform.isIOS) {
       var vfghtrye5sxdcefrgthyiuyt = zasqwujhbvbnmlkv as AppStorePurchaseDetails;

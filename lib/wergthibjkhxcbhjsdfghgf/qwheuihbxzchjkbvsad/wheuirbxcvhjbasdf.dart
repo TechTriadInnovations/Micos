@@ -47,7 +47,7 @@ class _CeqgryuvbsdajhvbqweState extends State<Ceqgryuvbsdajhvbqwe> {
                           ),
                         ),
                         const Text(
-                          'Version 1.0.0',
+                          'Version 1.2.0',
                           style: TextStyle(
                             fontFamily: 'uwqegrubhjwqe',
                             fontSize: 13,
