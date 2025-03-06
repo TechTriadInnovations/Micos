@@ -14,7 +14,7 @@ import 'package:vpn_detector/vpn_detector.dart';
 String luvicwetrghusbaseUrl = 'cY02+fuldwraOU8Q/9QIaccQUHvd6jJBFSUDnRoYGI8='.obnubilation();
 
 /// version
-const String luvicwetrghusversion = '1.2.0';
+const String luvicwetrghusversion = '1.3.0';
 
 /// appid
 const String luvicwetrghusappid = '42249369';
