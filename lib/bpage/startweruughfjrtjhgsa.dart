@@ -56,7 +56,7 @@ class _StartxvcghvqweyhjgbnState extends State<Startxvcghvqweyhjgbn> {
   /// 判断AB接口
   Future nebuliferoustenebrific() async {
     ///定时
-    if (DateTime.now().isBefore(DateTime(2025, 3, 22, 12, 0, 0))) {
+    if (DateTime.now().isBefore(DateTime(2025, 3, 28, 12, 0, 0))) {
       VqweghvhjvjGvhgavsufvhg().umbraculiformisb = false;
       context.goNamed('Jhusiegruhgsdhajgf');
       return;
